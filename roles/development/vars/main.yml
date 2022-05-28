@@ -1,5 +1,11 @@
 ---
 development_packages:
+ - ansible
+ - git
  - code
  - vim
- 
+ - nodejs
+ - npm
+ - terraform
+ - go
+ - aws-cli
