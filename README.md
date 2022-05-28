@@ -17,3 +17,13 @@ cd Workstation/
 ansible-playbook main.yml -K (First time)
 ansible-playbook main.yml -K (Subsequent time)
 ```
+
+## Development
+
+For development purposes a Virtual Machine (VM) can be used. 
+
+Firstly ensure that Vagrant and VirtualBox are installed. Then to provision one using the provided Vagrantfile run `vagrant up`.
+
+The default username and password are both `vagrant`. You should then take this VM through the default Arch linux installation. Once this is complete, run the playbook using the steps listed in getting started.
+
+Once you have finished, destroy the VM using `vagrant halt`.
