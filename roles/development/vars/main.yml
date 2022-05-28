@@ -9,3 +9,13 @@ development_packages:
  - terraform
  - go
  - aws-cli
+ - docker
+ - docker-compose
+ - virtualbox
+ - virtualbox-host-modules-arch
+ - unzip
+ - tree
+ - jq
+ - wget
+ - curl
+ - vagrant
