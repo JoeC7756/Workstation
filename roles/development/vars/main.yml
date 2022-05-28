@@ -19,3 +19,4 @@ development_packages:
  - wget
  - curl
  - vagrant
+ - bat

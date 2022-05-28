@@ -1,0 +1,16 @@
+---
+- name: Alias bat to cat
+  lineinfile:
+    path: "/home/{{ username }}/.bashrc"
+    line: "alias cat='bat --paging=never'"
+    state: present
+    insertafter: EOF
+    create: True
+
+- name: Alias tf to terraform
+  lineinfile:
+    path: "/home/{{ username }}/.bashrc"
+    line: "alias tf='terraform'"
+    state: present
+    insertafter: EOF
+    create: True
