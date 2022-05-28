@@ -7,3 +7,5 @@
       role: apps
     - name: Development specific tasks
       role: development
+    - name: Non-specific tasks
+      role: other
