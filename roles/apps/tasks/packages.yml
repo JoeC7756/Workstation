@@ -1,0 +1,5 @@
+---
+- name: Install required packages
+  package:
+    name: "{{ apps_packages }}"
+    state: latest 

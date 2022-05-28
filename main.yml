@@ -1,0 +1,9 @@
+---
+- name: Playbook to configure my personal workstation
+  hosts: localhost
+  become: yes
+  roles:
+    - name: Application specific tasks
+      role: apps
+    - name: Development specific tasks
+      role: development
