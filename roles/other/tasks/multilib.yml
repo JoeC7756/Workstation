@@ -1,0 +1,9 @@
+---
+- name: Enable multilib
+  blockinfile:
+     path: /etc/pacman.conf
+     insertafter: "# enable the multilib repositories as required here."
+     state: present
+     block: |
+       [multilib]
+       Include = /etc/pacman.d/mirrorlist

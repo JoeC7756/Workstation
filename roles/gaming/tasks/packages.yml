@@ -1,0 +1,21 @@
+---
+- name: Install wine dependencies
+  package:
+    name: "{{ wine_dependencies }}"
+    state: present 
+
+- name: Install nvidia drivers
+  package:
+    name: "{{ nvidia_drivers }}"
+    state: present
+  ignore_errors: true
+
+- name: Install battle net dependencies
+  package:
+    name: "{{ battle_net_dependencies }}"
+    state: present
+
+- name: Install game launchers
+  package:
+    name: "{{ game_launchers }}"
+    state: present

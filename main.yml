@@ -3,9 +3,11 @@
   hosts: localhost
   become: yes
   roles:
+    - name: Non-specific tasks
+      role: other
     - name: Application specific tasks
       role: apps
     - name: Development specific tasks
       role: development
-    - name: Non-specific tasks
-      role: other
+    - name: Gaming specific tasks
+      role: gaming

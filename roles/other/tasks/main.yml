@@ -1,2 +1,4 @@
 ---
  - include_tasks: security.yml
+ - include_tasks: multilib.yml
+ - include_tasks: updates.yml
