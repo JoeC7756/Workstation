@@ -1,6 +1,5 @@
 ---
 apps_packages:
   - discord
-  - firefox
+  - firefox-developer-edition
   - neofetch
-  - easyeffects

@@ -1,0 +1,11 @@
+---
+- name: Clone Jellyfin repo from AUR
+  git:  
+    repo: https://aur.archlinux.org/jellyfin-media-player.git
+    dest: /tmp/jellyfin-desktop
+
+- name: Install Jellyfin
+  shell:
+    cmd: makepkg -sic --noconfirm
+    chdir: /tmp/jellyfin-desktop
+  ignore_errors: true

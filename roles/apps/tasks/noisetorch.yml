@@ -1,0 +1,11 @@
+---
+- name: Clone Noisetorch repo from AUR
+  git:  
+    repo: https://aur.archlinux.org/noisetorch.git
+    dest: /tmp/noisetorch
+
+- name: Install Noisetorch
+  shell:
+    cmd: makepkg -sic --noconfirm
+    chdir: /tmp/noisetorch
+  ignore_errors: true
